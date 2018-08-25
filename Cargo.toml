@@ -3,7 +3,7 @@ version = "0.1.1"
 authors = ["seph <sephvelut@gmail.com>"]
 description = "Voice Activity Detector using WebRTC module"
 license-file = "LICENSE"
-repository= "SephVelut/vad-sys"
+repository= "https://github.com/SephVelut/vad-sys"
 
 links = "vad"
 build = "build.rs"

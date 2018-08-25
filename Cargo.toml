@@ -1,7 +1,8 @@
-[package]
-name = "vad-sys"
+[package]name = "vad-sys"
 version = "0.1.0"
 authors = ["seph <sephvelut@gmail.com>"]
+description = "Voice Activity Detector using WebRTC module"
+license-file = "LICENSE"
 
 links = "vad"
 build = "build.rs"

@@ -24,6 +24,7 @@ fn main() {
     dir.pop();
     dir.push("output");
 
-    let out_path = PathBuf::from(dir.display().to_string());
+    //let out_path = PathBuf::from(dir.display().to_string());
+    let out_path = PathBuf::from("output");
     bindings.write_to_file(out_path.join("bindings.rs")).expect("Couldn't write bindings!");
 }

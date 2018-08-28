@@ -18,7 +18,7 @@ pub mod fvad {
             }
         }
 
-        pub unsafe fn is_silent(self, buffers: &[i16]) -> ::std::os::raw::c_int {
+        pub unsafe fn is_silent(&self, buffers: &[i16]) -> ::std::os::raw::c_int {
             let buffer = &buffers[0] as *const i16;
 
             fvad_process(self.fvad, buffer, buffers.len())

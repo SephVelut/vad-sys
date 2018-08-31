@@ -24,4 +24,12 @@ pub mod fvad {
             fvad_process(self.fvad, buffer, buffers.len())
         }
     }
+
+    impl Drop for Vad {
+        fn drop(&mut self) {
+            unsafe {
+                fvad_free(self.fvad);
+            }
+        }
+    }
 }
